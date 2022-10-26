@@ -10,7 +10,7 @@ app.use('/api/productos', require('./routes/productos'));
 //     res.send("Hola mundo")
 // })
 
-const puerto =process.env.PORT || 4000
+const puerto = process.env.PORT || 4000
 
 app.listen(puerto, () => {
     console.log(`El servidor se está ejecutando en http://localhost:${puerto}`)
