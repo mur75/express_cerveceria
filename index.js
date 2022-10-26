@@ -9,8 +9,13 @@ app.use('/api/productos', require('./routes/productos'));
 // app.get('/', (req, res) => {
 //     res.send("Hola mundo")
 // })
-app.listen(4000, () => {
-    console.log("El servidor esta arriba")
+
+const puerto =process.env.PORT || 4000
+
+app.listen(puerto, () => {
+    console.log(`El servidor se está ejecutando en http://localhost:${puerto}`)
 })
 
 // regexNumero = /^[0-9]+$/;
+
+
